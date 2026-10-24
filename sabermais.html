@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#0b0b0f" name="theme-color" />
+    <title>Saber Mais - Inhouse</title>
+    <!-- LINK DO CSS: liga o ficheiro style.css (todo o visual do site) -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ===== CABEÇALHO E MENU ===== -->
+    <header class="top">
+      <div class="wrap bar">
+        <a class="brand" href="index.html">
+          <!-- Logo circular com o ponto verde (online) -->
+          <div class="logo-circular" title="Online">
+            <img src="logo.jpg" alt="Logo Inhouse Distribuidora" />
+            <span class="ponto-online"></span>
+          </div>
+          <div class="brand-nome">
+            <b>IN HOUSE</b>
+            <small>DISTRIBUIDORA</small>
+          </div>
+        </a>
+        <nav class="menu" id="nv">
+          <a href="index.html">Início</a>
+          <a href="categorias.html">Categorias</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contactos.html">Contactos</a>
+          <a class="on" href="sabermais.html">Saber Mais</a>
+        </nav>
+        <div class="tools">
+          <button class="ib" id="th" title="Mudar tema">🌙</button>
+          <button class="ib" id="burger" title="Menu">☰</button>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="sec">
+        <h2>💡 Saber Mais</h2>
+      </div>
+      <p class="mut">Valorizamos os artistas angolanos do Rap e do Desporto.</p>
+      <div class="stats">
+        <div class="stat">
+          <b data-n="4" data-conta="categorias">0</b>
+          Categorias
+        </div>
+        <div class="stat">
+          <b data-n="4" data-conta="planos">0</b>
+          Planos
+        </div>
+        <div class="stat">
+          <b data-n="5" data-conta="noticias">0</b>
+          Publicações
+        </div>
+      </div>
+      <div class="acc open">
+        <button>
+          Por que criamos este site?
+          <span>+</span>
+        </button>
+        <div class="ct">
+          Para dar mais valorização aos artistas angolanos, principalmente do
+          Rap e do Desporto. Faltava um espaço nosso, simples e direto, onde as
+          notícias chegam rápido e os memes também fazem parte da cultura.
+        </div>
+      </div>
+      <div class="acc">
+        <button>
+          Qual é a nossa intenção?
+          <span>+</span>
+        </button>
+        <div class="ct">
+          Expandir o trabalho da distribuidora, ser referência em notícias do
+          Rap e criar uma comunidade fiel.
+        </div>
+      </div>
+      <div class="acc">
+        <button>
+          Como divulgar o meu trabalho?
+          <span>+</span>
+        </button>
+        <div class="ct">
+          Escolha um plano na página de Serviços e fale connosco no WhatsApp.
+        </div>
+      </div>
+      <h3 class="tit">📩 Suporte / Fale Connosco</h3>
+      <form class="f" id="fm">
+        <input id="fn" placeholder="O seu nome" required="" />
+        <textarea
+          id="fx"
+          placeholder="A sua mensagem"
+          required=""
+          rows="4"
+        ></textarea>
+        <button class="btn wpp">Enviar no WhatsApp</button>
+      </form>
+    </main>
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+      <div class="wrap">
+        <div class="row">
+          <a
+            class="btn ghost"
+            href="https://instagram.com/Inhouse_distribuidora"
+            target="_blank"
+          >
+            📸 Instagram
+          </a>
+          <a
+            class="btn ghost"
+            href="https://wa.me/244975634292?text=Ol%C3%A1%21"
+            target="_blank"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
+        © 2026 Inhouse Distribuidora – A Casa dos Artistas
+      </div>
+    </footer>
+    <!-- ===== BOTÕES FLUTUANTES, AVISO E JANELA ===== -->
+    <a
+      class="fab"
+      href="https://wa.me/244975634292?text=Ol%C3%A1%21"
+      target="_blank"
+    >
+      💬
+    </a>
+    <button class="ib btn" id="up" title="Voltar ao topo">↑</button>
+    <div id="toast"></div>
+    <div class="modal" id="modal">
+      <div class="mb">
+        <button class="ib x">×</button>
+        <div class="c"></div>
+      </div>
+    </div>
+    <noscript>
+      <p class="aviso">
+        Ative o JavaScript para usar todas as funções do site.
+      </p>
+    </noscript>
+    <!-- LINK DO JAVASCRIPT: liga o ficheiro app.js (toda a interatividade) -->
+    <script src="app.js"></script>
+  </body>
+</html>

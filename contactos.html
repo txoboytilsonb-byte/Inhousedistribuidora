@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#0b0b0f" name="theme-color" />
+    <title>Contactos - Inhouse</title>
+    <!-- LINK DO CSS: liga o ficheiro style.css (todo o visual do site) -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ===== CABEÇALHO E MENU ===== -->
+    <header class="top">
+      <div class="wrap bar">
+        <a class="brand" href="index.html">
+          <!-- Logo circular com o ponto verde (online) -->
+          <div class="logo-circular" title="Online">
+            <img src="logo.jpg" alt="Logo Inhouse Distribuidora" />
+            <span class="ponto-online"></span>
+          </div>
+          <div class="brand-nome">
+            <b>IN HOUSE</b>
+            <small>DISTRIBUIDORA</small>
+          </div>
+        </a>
+        <nav class="menu" id="nv">
+          <a href="index.html">Início</a>
+          <a href="categorias.html">Categorias</a>
+          <a href="servicos.html">Serviços</a>
+          <a class="on" href="contactos.html">Contactos</a>
+          <a href="sabermais.html">Saber Mais</a>
+        </nav>
+        <div class="tools">
+          <button class="ib" id="th" title="Mudar tema">🌙</button>
+          <button class="ib" id="burger" title="Menu">☰</button>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="sec">
+        <h2>📬 Contactos</h2>
+      </div>
+      <div class="cgrid">
+        <a class="ci rv" href="https://wa.me/244975634292" target="_blank">
+          <i>💬</i>
+          <div>
+            <b>WhatsApp</b>
+            <small>975 634 292</small>
+          </div>
+        </a>
+        <a class="ci rv" href="tel:+244975634292" target="_blank">
+          <i>📞</i>
+          <div>
+            <b>Ligar</b>
+            <small>939 364 858</small>
+          </div>
+        </a>
+        <a
+          class="ci rv"
+          href="mailto:inhouse.distribuidora@gmail.com"
+          target="_blank"
+        >
+          <i>📧</i>
+          <div>
+            <b>Email</b>
+            <small>inhousedistribuidoraa@gmail.com</small>
+          </div>
+        </a>
+        <a
+          class="ci rv"
+          href="https://instagram.com/Inhouse_distribuidora"
+          target="_blank"
+        >
+          <i>📸</i>
+          <div>
+            <b>Instagram</b>
+            <small>@Inhouse_distribuidora</small>
+          </div>
+        </a>
+        <a class="ci rv" href="https://facebook.com/" target="_blank">
+          <i>📘</i>
+          <div>
+            <b>Facebook</b>
+            <small>Inhouse Distribuidora</small>
+          </div>
+        </a>
+      </div>
+      <div class="row mt">
+        <button
+          class="btn ghost"
+          data-copy="975634292"
+          data-msg="Número copiado!"
+        >
+          📋 Copiar número
+        </button>
+        <button
+          class="btn ghost"
+          data-copy="inhouse.distribuidora@gmail.com"
+          data-msg="Email copiado!"
+        >
+          📋 Copiar email
+        </button>
+      </div>
+      <form class="f" id="fm">
+        <input id="fn" placeholder="O seu nome" required="" />
+        <textarea
+          id="fx"
+          placeholder="A sua mensagem"
+          required=""
+          rows="4"
+        ></textarea>
+        <button class="btn wpp">Enviar mensagem no WhatsApp</button>
+      </form>
+    </main>
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+      <div class="wrap">
+        <div class="row">
+          <a
+            class="btn ghost"
+            href="https://instagram.com/Inhouse_distribuidora"
+            target="_blank"
+          >
+            📸 Instagram
+          </a>
+          <a
+            class="btn ghost"
+            href="https://wa.me/244975634292?text=Ol%C3%A1%21"
+            target="_blank"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
+        © 2026 Inhouse Distribuidora – A Casa dos Artistas
+      </div>
+    </footer>
+    <!-- ===== BOTÕES FLUTUANTES, AVISO E JANELA ===== -->
+    <a
+      class="fab"
+      href="https://wa.me/244975634292?text=Ol%C3%A1%21"
+      target="_blank"
+    >
+      💬
+    </a>
+    <button class="ib btn" id="up" title="Voltar ao topo">↑</button>
+    <div id="toast"></div>
+    <div class="modal" id="modal">
+      <div class="mb">
+        <button class="ib x">×</button>
+        <div class="c"></div>
+      </div>
+    </div>
+    <noscript>
+      <p class="aviso">
+        Ative o JavaScript para usar todas as funções do site.
+      </p>
+    </noscript>
+    <!-- LINK DO JAVASCRIPT: liga o ficheiro app.js (toda a interatividade) -->
+    <script src="app.js"></script>
+  </body>
+</html>

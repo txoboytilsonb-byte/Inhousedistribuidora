@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#0b0b0f" name="theme-color" />
+    <title>Categorias - Inhouse</title>
+    <!-- LINK DO CSS: liga o ficheiro style.css (todo o visual do site) -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ===== CABEÇALHO E MENU ===== -->
+    <header class="top">
+      <div class="wrap bar">
+        <a class="brand" href="index.html">
+          <!-- Logo circular com o ponto verde (online) -->
+          <div class="logo-circular" title="Online">
+            <img src="logo.jpg" alt="Logo Inhouse Distribuidora" />
+            <span class="ponto-online"></span>
+          </div>
+          <div class="brand-nome">
+            <b>IN HOUSE</b>
+            <small>DISTRIBUIDORA</small>
+          </div>
+        </a>
+        <nav class="menu" id="nv">
+          <a href="index.html">Início</a>
+          <a class="on" href="categorias.html">Categorias</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contactos.html">Contactos</a>
+          <a href="sabermais.html">Saber Mais</a>
+        </nav>
+        <div class="tools">
+          <button class="ib" id="th" title="Mudar tema">🌙</button>
+          <button class="ib" id="burger" title="Menu">☰</button>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="sec">
+        <h2>📂 Categorias</h2>
+      </div>
+      <div class="grid">
+        <a class="cat rv" href="index.html?cat=gerais">
+          <img alt="" src="plutonio.jpg" />
+          <div>
+            <b>🙌🏾 Notícias Gerais</b>
+            <br />
+            <small>Todas as notícias juntas →</small>
+          </div>
+        </a>
+        <a class="cat rv" href="index.html?cat=rap">
+          <img alt="" src="uami_ndogadas.jpg" />
+          <div>
+            <b>🔥 Notícias do Rap</b>
+            <br />
+            <small>Ver notícias →</small>
+          </div>
+        </a>
+        <a class="cat rv" href="index.html?cat=desporto">
+          <img alt="" src="Real_Madrid.jpg" />
+          <div>
+            <b>⚽ Notícias Desportivas</b>
+            <br />
+            <small>Ver notícias →</small>
+          </div>
+        </a>
+        <a class="cat rv" href="index.html?cat=memes">
+          <img alt="" src="meme.jpg" />
+          <div>
+            <b>😂 Memes da Banda</b>
+            <br />
+            <small>Ver notícias →</small>
+          </div>
+        </a>
+        <a class="cat rv cat-preto" href="servicos.html#parcerias">
+          <div>
+            <b>🤝 Parcerias</b>
+            <br />
+            <small>Marcas, portais, empresas e artistas</small>
+          </div>
+        </a>
+      </div>
+    </main>
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+      <div class="wrap">
+        <div class="row">
+          <a
+            class="btn ghost"
+            href="https://instagram.com/Inhouse_distribuidora"
+            target="_blank"
+          >
+            📸 Instagram
+          </a>
+          <a
+            class="btn ghost"
+            href="https://wa.me/244975634292?text=Ol%C3%A1%21"
+            target="_blank"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
+        © 2026 Inhouse Distribuidora – A Casa dos Artistas
+      </div>
+    </footer>
+    <!-- ===== BOTÕES FLUTUANTES, AVISO E JANELA ===== -->
+    <a
+      class="fab"
+      href="https://wa.me/244975634292?text=Ol%C3%A1%21"
+      target="_blank"
+    >
+      💬
+    </a>
+    <button class="ib btn" id="up" title="Voltar ao topo">↑</button>
+    <div id="toast"></div>
+    <div class="modal" id="modal">
+      <div class="mb">
+        <button class="ib x">×</button>
+        <div class="c"></div>
+      </div>
+    </div>
+    <noscript>
+      <p class="aviso">
+        Ative o JavaScript para usar todas as funções do site.
+      </p>
+    </noscript>
+    <!-- LINK DO JAVASCRIPT: liga o ficheiro app.js (toda a interatividade) -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="#0b0b0f" name="theme-color" />
+    <title>Inhouse Distribuidora</title>
+    <!-- LINK DO CSS: liga o ficheiro style.css (todo o visual do site) -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ===== CABEÇALHO E MENU ===== -->
+    <header class="top">
+      <div class="wrap bar">
+        <a class="brand" href="index.html">
+          <!-- Logo circular com o ponto verde (online) -->
+          <div class="logo-circular" title="Online">
+            <img src="logo.jpg" alt="Logo Inhouse Distribuidora" />
+            <span class="ponto-online"></span>
+          </div>
+          <div class="brand-nome">
+            <b>IN HOUSE</b>
+            <small>DISTRIBUIDORA</small>
+          </div>
+        </a>
+        <nav class="menu" id="nv">
+          <a class="on" href="index.html">Início</a>
+          <a href="categorias.html">Categorias</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contactos.html">Contactos</a>
+          <a href="sabermais.html">Saber Mais</a>
+        </nav>
+        <div class="tools">
+          <button class="ib" id="th" title="Mudar tema">🌙</button>
+          <button class="ib" id="burger" title="Menu">☰</button>
+        </div>
+      </div>
+    </header>
+    <main class="wrap">
+      <!-- ===== TÍTULO DA CATEGORIA =====
+      Só aparece quando se escolhe uma categoria (Rap, Desporto, Memes). -->
+      <div class="sec" id="cat-titulo" hidden>
+        <h2></h2>
+        <a class="btn ghost" href="index.html?cat=gerais">← Notícias Gerais</a>
+      </div>
+      <!-- ===== DESTAQUES (slider automático) =====
+      Não precisa de mexer aqui. O JavaScript cria os slides sozinho:
+      - em Notícias Gerais: a notícia mais nova de cada categoria;
+      - dentro de uma categoria: as notícias mais novas dessa categoria. -->
+      <section class="slider" id="slider" aria-label="Destaques"></section>
+      <div class="sec">
+        <h2 id="lista-titulo">🙌🏾 Notícias Gerais</h2>
+      </div>
+      <!-- ===== PESQUISA E FILTROS ===== -->
+      <div class="tb">
+        <input class="search" id="q" placeholder="🔍 Pesquisar notícias..." />
+        <div class="chips" id="ch">
+          <button class="chip on" data-k="gerais">🙌🏾 Notícias Gerais</button>
+          <button class="chip" data-k="rap">🔥 Notícias do Rap</button>
+          <button class="chip" data-k="desporto">⚽ Notícias Desportivas</button>
+          <button class="chip" data-k="memes">😂 Memes da Banda</button>
+        </div>
+      </div>
+      <!-- ===== NOTÍCIAS (o site ordena pela data) ===== -->
+      <div class="grid" id="g">
+        <!-- ===== COMO PUBLICAR UMA NOTÍCIA NOVA =====
+        1) Ponha a imagem na pasta do site (ex.: nova.jpg).
+        2) Copie o ficheiro noticia-modelo.html, guarde como noticia-6.html
+           e preencha o título, a imagem e o texto.
+        3) Copie o MODELO abaixo e cole-o aqui na lista (em qualquer lugar,
+           de preferência no topo). Mude: href, data-cat, data-data,
+           imagem, título e resumo.
+
+        data-cat (categoria) tem de ser UMA destas, escrita igual:
+          rap       = 🔥 Notícias do Rap
+          desporto  = ⚽ Notícias Desportivas
+          memes     = 😂 Memes da Banda
+          gerais    = 🙌🏾 Notícias Gerais (assuntos que não são de Rap, Desporto nem Memes)
+        A categoria "Notícias Gerais" mostra TODAS as notícias de todas as
+        categorias juntas. Por isso, qualquer notícia aparece em Notícias
+        Gerais e também na sua própria categoria.
+        data-data = data da notícia, no formato AAAA-MM-DD (ex.: 2026-10-25).
+        O site ordena sozinho: a data mais recente fica sempre primeiro,
+        e o destaque usa as notícias mais novas.
+
+        MODELO DO BLOCO:
+        <a class="card rv" href="noticia-6.html" data-cat="rap" data-data="2026-10-25">
+          <div class="im"><img src="nova.jpg" alt="Título" /></div>
+          <div class="bd">
+            <span class="badge">🔥 Notícias do Rap</span>
+            <h3>Título da notícia</h3>
+            <p>Resumo curto.</p>
+            <span class="more">Ler mais →</span>
+          </div>
+        </a>
+        ===== FIM DAS INSTRUÇÕES ===== -->
+        
+        <!-- Notícia 5 -->
+        <a class="card rv" data-cat="rap" data-data="2026-10-24" href="noticia-5.html">
+          <div class="im">
+            <img alt="Ricky Star revela tracklist do álbum Momentum" src="ricky_star.jpg" />
+          </div>
+          <div class="bd">
+            <span class="badge">🔥 Notícias do Rap</span>
+            <h3>Ricky Star revela tracklist do álbum Momentum</h3>
+            <p>
+              Álbum com 12 faixas e lançamento marcado para 30 de Outubro, com
+              Okénio M, Evas e Bahamas.
+            </p>
+            <span class="more">Ler mais →</span>
+          </div>
+        </a>
+        <!-- Notícia 1 -->
+        <a class="card rv" data-cat="rap" data-data="2026-10-24" href="noticia-1.html">
+          <div class="im">
+            <img
+              alt="Uami elogia Kelson Most Wanted"
+              src="uami_ndogadas.jpg"
+            />
+          </div>
+          <div class="bd">
+            <span class="badge">🔥 Notícias do Rap</span>
+            <h3>Uami elogia Kelson Most Wanted</h3>
+            <p>
+              Uami Ndongadas destaca a dedicação e a responsabilidade de Kelson
+              com os fãs.
+            </p>
+            <span class="more">Ler mais →</span>
+          </div>
+        </a>
+        <!-- Notícia 2 -->
+        <a class="card rv" data-cat="gerais" data-data="2026-10-24" href="noticia-2.html">
+          <div class="im">
+            <img alt="Plutónio cobra 34 milhões por show" src="plutonio.jpg" />
+          </div>
+          <div class="bd">
+            <span class="badge">🙌🏾 Notícias Gerais</span>
+            <h3>Plutónio cobra 34 milhões por show</h3>
+            <p>
+              33 mil euros por um único show: Plutónio no topo dos mais bem
+              pagos da lusofonia.
+            </p>
+            <span class="more">Ler mais →</span>
+          </div>
+        </a>
+        <!-- Notícia 3 -->
+        <a class="card rv" data-cat="desporto" data-data="2026-10-24" href="noticia-3.html">
+          <div class="im">
+            <img alt="Real Madrid segue invicto" src="Real_Madrid.jpg" />
+          </div>
+          <div class="bd">
+            <span class="badge">⚽ Notícias Desportivas</span>
+            <h3>Real Madrid segue invicto</h3>
+            <p>
+              O Real Madrid continua invicto no campeonato, somando mais 3
+              pontos.
+            </p>
+            <span class="more">Ler mais →</span>
+          </div>
+        </a>
+        <!-- Notícia 4 -->
+        <a class="card rv" data-cat="memes" data-data="2026-10-24" href="noticia-4.html">
+          <div class="im">
+            <img alt="Memes da Banda" src="meme.jpg" />
+          </div>
+          <div class="bd">
+            <span class="badge">😂 Memes da Banda</span>
+            <h3>Memes da Banda</h3>
+            <p>Sorri com responsabilidade e partilha com os amigos 😂</p>
+            <span class="more">Ler mais →</span>
+          </div>
+        </a>
+        <div class="empty" hidden="" id="vazio">😕 Nada encontrado</div>
+      </div>
+      
+   
+      <!-- ===== CHAMADA PARA AÇÃO ===== -->
+      <div class="cta rv">
+        <h2>Quer ver o seu trabalho aqui? 🎤</h2>
+        <div class="row">
+          <a
+            class="btn wpp"
+            href="https://wa.me/244975634292?text=Ol%C3%A1%21%20Quero%20divulgar%20o%20meu%20trabalho."
+            target="_blank"
+          >
+            WhatsApp
+          </a>
+          <a class="btn ghost" href="servicos.html">Ver planos</a>
+        </div>
+      </div>
+    </main>
+    <!-- ===== RODAPÉ ===== -->
+    <footer>
+      <div class="wrap">
+        <div class="row">
+          <a
+            class="btn ghost"
+            href="https://instagram.com/Inhouse_distribuidora"
+            target="_blank"
+          >
+            📸 Instagram
+          </a>
+          <a
+            class="btn ghost"
+            href="https://wa.me/244975634292?text=Ol%C3%A1%21"
+            target="_blank"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
+        © 2026 Inhouse Distribuidora – A Casa dos Artistas
+      </div>
+    </footer>
+    <!-- ===== BOTÕES FLUTUANTES, AVISO E JANELA ===== -->
+    <a
+      class="fab"
+      href="https://wa.me/244975634292?text=Ol%C3%A1%21"
+      target="_blank"
+    >
+      💬
+    </a>
+    <button class="ib btn" id="up" title="Voltar ao topo">↑</button>
+    <div id="toast"></div>
+    <div class="modal" id="modal">
+      <div class="mb">
+        <button class="ib x">×</button>
+        <div class="c"></div>
+      </div>
+    </div>
+    <noscript>
+      <p class="aviso">
+        Ative o JavaScript para usar todas as funções do site.
+      </p>
+    </noscript>
+    <!-- LINK DO JAVASCRIPT: liga o ficheiro app.js (toda a interatividade) -->
+    <script src="app.js"></script>
+  </body>
+</html>
